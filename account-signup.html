@@ -15,6 +15,7 @@
                         <a href="home.html"><img src="images/shopping-cart.png" class="shopcart-img" alt=""></a>
                         <a class="menu-text" href="home.html">Bakery Store</a>
                     </span>
+                    <img src="images/closed-menu-icon.png" class="menu-hidden">
                     <span class="menu">
                         <a class="menu-text page" href="home.html">Home</a>
                         <a class="menu-text page" href="products.html">Products</a>
@@ -33,7 +34,7 @@
                         <a href="account-login.html"><img class="back-btn" src="images/back-button-icon.png" alt=""></a>
                         <h1 class="verification-text">Sign Up</h1>
                     </div>
-                    <div class="signup-inner-wrapper">
+                    <form name="signup-form" class="signup-inner-wrapper" method="post">
                         <div class="signup-input-wrapper">
                             <div class="signup-input-container">
                                 <label for="firstname" class="input-field-name">First name</label>
@@ -60,7 +61,7 @@
                             </div>
                             <button class="signup-btn">Sign Up</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -78,5 +79,7 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="scripts/registration.js"></script>
+        <script type="application/javascript" src="scripts/index.js"></script>
     </body>
 </html>

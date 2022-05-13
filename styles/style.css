@@ -118,6 +118,16 @@ h3 {
     margin-right: 25px;
 }
 
+.menu-hidden {
+    height: 33px;
+    width: 33px;
+    display: none;
+}
+
+.menu-hidden:hover {
+    cursor: pointer;
+}
+
 .main {
     align-items: center;
     text-align: center;
@@ -337,6 +347,10 @@ h3 {
         display: flex;
     }
 
+    .menu-text {
+        margin: auto 10px auto 14px;
+    }
+
     .greeting-section {
         height: 452px;
         width: 380px;
@@ -359,10 +373,22 @@ h3 {
 
 @media screen and (max-width: 600px) {
     .header-full, .header-placeholder {
-        height: 157px;
+        height: 65px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-hidden {
+        display: flex;
+        position: absolute;
+        left: 92%;
+        top: 5px;
     }
 
     .header-inner {
+        justify-content: center;
         flex-direction: column;
     }
 
@@ -549,7 +575,7 @@ h3 {
 }
 
 #signup, #home, #login {
-    min-height: 630px;
+    min-height: 602px;
 }
 
 .signup-full {
